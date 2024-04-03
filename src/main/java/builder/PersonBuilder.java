@@ -1,3 +1,5 @@
+package builder;
+
 public class PersonBuilder {
     private String name;
     private String surname;
@@ -28,7 +30,7 @@ public class PersonBuilder {
         return this;
     }
 
-    // Создание объекта Person
+    // Создание объекта builder.Person
     public Person build() {
         if (name == null || surname == null) {
             throw new IllegalStateException("Не указаны обязательные поля: имя и фамилия");

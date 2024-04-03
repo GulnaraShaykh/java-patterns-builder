@@ -1,3 +1,5 @@
+package builder;
+
 public class Person {
     protected final String name;
     protected final String surname;
